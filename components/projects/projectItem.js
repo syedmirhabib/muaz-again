@@ -1,6 +1,6 @@
 import classes from './projectItem.module.scss';
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion } from 'framer-motion';
 
 const ProjectItem = (props) => {
@@ -30,7 +30,10 @@ const ProjectItem = (props) => {
                   width={320}
                   height={220}
                   alt=''
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
             ) : (
               <div className={classes.placeholderContainer}>

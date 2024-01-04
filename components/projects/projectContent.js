@@ -6,7 +6,7 @@ import {
   solarizedlight,
 } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import classes from './projectContent.module.scss';
 import Link from 'next/link';
 
@@ -92,7 +92,10 @@ const ProjectContent = (props) => {
                 width={500}
                 height={360}
                 alt=''
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           )}
 
@@ -118,7 +121,10 @@ const ProjectContent = (props) => {
                       width={1000}
                       height={700}
                       alt={screenshot.description}
-                    />
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                      }} />
                     <div className={classes.description}>
                       {index + 1}. {screenshot.description}
                     </div>

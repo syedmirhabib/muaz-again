@@ -1,5 +1,5 @@
 import classes from './hero.module.scss';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useState, useEffect } from 'react';
 import Modal from '../layout/modal/modal';
 import Aos from 'aos';
@@ -45,7 +45,10 @@ const Hero = () => {
                   alt='usa-flag'
                   width={16}
                   height={16}
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </span>{' '}
               Javascript.
             </p>
@@ -99,7 +102,10 @@ const Hero = () => {
               height={460}
               alt='profile-pic'
               data-aos='fade-left'
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
         <div className='iconScrollContainer'>

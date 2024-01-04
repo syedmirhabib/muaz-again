@@ -1,6 +1,6 @@
 import classes from './about.module.scss';
 import { useEffect } from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -38,7 +38,10 @@ const About = () => {
                 height={600}
                 alt='profile-pic'
                 data-aos='fade-left'
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className={classes.quote} data-aos='fade-right'>
               &quot;Distinctio officiis excepturi facere incidunt ut!&quot;

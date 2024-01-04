@@ -21,19 +21,19 @@ const FeaturedProjectItem = (props) => {
       <div className={classes.row}>
         <div className={classes.columnRight}>
           <Link href={`/projects/${project.slug}`}>
-            <a>
-              <div className={classes.card}>
-                <Image
-                  src={`/portfolio/images/projects/${project.image}`}
-                  width={600}
-                  height={460}
-                  alt={project.title}
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                  }} />
-              </div>
-            </a>
+
+            <div className={classes.card}>
+              <Image
+                src={`/portfolio/images/projects/${project.image}`}
+                width={600}
+                height={460}
+                alt={project.title}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
+            </div>
+
           </Link>
         </div>
 
@@ -54,10 +54,8 @@ const FeaturedProjectItem = (props) => {
               </a>
             )}
             <Link href={`/projects/${project.slug}`}>
-              <a>
-                <i className='fa fa-circle-info'></i>
-                Project details
-              </a>
+
+              <i className='fa fa-circle-info'></i>Project details
             </Link>
           </div>
         </div>

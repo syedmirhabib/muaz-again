@@ -1,6 +1,6 @@
 import classes from './about.module.scss';
 import { useEffect } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

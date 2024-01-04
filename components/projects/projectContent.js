@@ -6,7 +6,7 @@ import {
   solarizedlight,
 } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import classes from './projectContent.module.scss';
 import Link from 'next/link';
 
